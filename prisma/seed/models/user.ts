@@ -7,6 +7,7 @@ export async function createUsers() {
   let createdCounter = 0;
   const existingCount = await prisma.user.count();
 
+  /*
   await Promise.all(
     Array.from({ length: Math.max(0, 98 - existingCount) }, async () => {
       await prisma.user.create({
@@ -19,6 +20,7 @@ export async function createUsers() {
       createdCounter += 1;
     })
   );
+  */
 
   if (!(await prisma.user.findUnique({ where: { email: 'user@user.com' } }))) {
     await prisma.user.create({
