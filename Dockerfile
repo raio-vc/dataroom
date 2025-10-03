@@ -28,9 +28,9 @@ COPY --from=build /app/.next /app/.next
 USER nextjs
 WORKDIR /app
 
-EXPOSE 3000
+EXPOSE 4000
 
-ENV PORT 3000
+ENV PORT 4000
 
 # Learn more here: https://nextjs.org/telemetry
 ENV NEXT_TELEMETRY_DISABLED 1
