@@ -1,0 +1,62 @@
+{
+  "registerCode": {
+    "subject": "Verifique sua conta",
+    "preview": "Seu código de verificação",
+    "title": "Verifique sua conta",
+    "hello": "Bem-vindo(a) {{name}},",
+    "intro": "Sua conta está quase pronta! Este é seu código de verificação:",
+    "validityTime": "Este código será válido apenas pelos próximos {{expiration}} minutos.",
+    "ignoreHelper": "Se você não tentou se registrar, pode ignorar este e-mail com segurança."
+  },
+  "registerEmailAlreadyUsed": {
+    "subject": "Conta já existe",
+    "preview": "Seu e-mail já está sendo usado por outra conta",
+    "title": "Conta já existe",
+    "hello": "Olá {{name}},",
+    "intro": "Seu e-mail {{email}} já está em uso, você não pode criar outra conta com ele.",
+    "ignoreHelper": "Se você não tentou criar uma conta, pode ignorar este e-mail com segurança."
+  },
+  "loginCode": {
+    "subject": "Código de verificação de login",
+    "preview": "Código de verificação para entrar",
+    "title": "Código de verificação de login",
+    "hello": "Bem-vindo(a) de volta {{name}},",
+    "intro": "Este é seu código de verificação:",
+    "validityTime": "Este código será válido apenas pelos próximos {{expiration}} minutos.",
+    "ignoreHelper": "Se você não tentou fazer login, pode ignorar este e-mail com segurança."
+  },
+  "loginNotFound": {
+    "subject": "Conta não encontrada",
+    "preview": "Este é o e-mail correto?",
+    "title": "Este é o e-mail correto?",
+    "intro": "Parece que não existe uma conta associada a este endereço de e-mail.",
+    "button": "Tentar outro e-mail",
+    "ignoreHelper": "Se você não tentou fazer login, pode ignorar este e-mail com segurança."
+  },
+  "emailUpdate": {
+    "subject": "Código de verificação",
+    "preview": "Alterar seu e-mail",
+    "title": "Seu código de verificação",
+    "hello": "Olá {{name}},",
+    "intro": "Este é o código de verificação para atualizar seu e-mail:",
+    "validityTime": "Este código será válido apenas pelos próximos {{expiration}} minutos.",
+    "ignoreHelper": "Se você não tentou alterar seu e-mail, pode ignorar este e-mail com segurança."
+  },
+  "emailUpdateAlreadyUsed": {
+    "subject": "Tentando atualizar seu e-mail?",
+    "preview": "Seu e-mail já está sendo usado por outra conta",
+    "title": "Tentando atualizar seu e-mail?",
+    "hello": "Olá {{name}},",
+    "intro": "Seu e-mail {{email}} já está em uso, você não pode usá-lo para outra conta.",
+    "ignoreHelper": "Se você não tentou alterar seu e-mail, pode ignorar este e-mail com segurança."
+  },
+  "deleteAccountCode": {
+    "subject": "Excluir sua conta",
+    "preview": "Código de verificação para excluir sua conta",
+    "title": "Excluir sua conta",
+    "hello": "{{name}}, você está prestes a excluir sua conta. Isso será permanente, tenha certeza do que está fazendo.",
+    "intro": "Este é seu código de verificação:",
+    "validityTime": "Este código será válido apenas pelos próximos {{expiration}} minutos.",
+    "ignoreHelper": "Se você não tentou excluir sua conta, pode ignorar este e-mail com segurança."
+  }
+}

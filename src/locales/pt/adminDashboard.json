@@ -1,0 +1,13 @@
+{
+  "title": "Painel",
+  "welcome": {
+    "title": "Bem-vindo ao 🚀 Start UI [web]",
+    "description": "Um starter UI opinativo com React, Chakra UI, React Query & React Hook Form",
+    "author": "— Da <strong>Equipe BearStudio</strong>"
+  },
+  "links": {
+    "github": "Repositório GitHub",
+    "openIssue": "Abrir Issue",
+    "documentation": "Documentação"
+  }
+}
