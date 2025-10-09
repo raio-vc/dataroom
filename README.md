@@ -1,46 +1,15 @@
-<h1 align="center"><img src=".github/assets/thumbnail.png" alt="Start UI Web" /></h1>
+## Introduction
 
-[![Discord](https://img.shields.io/discord/452798408491663361)](https://go.bearstudio.fr/discord)
+**Raio Data Room** is an open-source web application developed by the [Raio Capital](https://raio.vc) team. It is designed to enable small teams to share investment opportunities, including all required documentation for analysis and due diligence.
 
-> [!NOTE]  
-> **The next version of Start UI is in active development**. Track the progress in the [Start UI v3 Pull Request](https://github.com/BearStudio/start-ui-web/pull/572).
+The application is built on **[Start UI Web](https://github.com/BearStudio/start-ui-web)** by BearStudio and can be fully deployed on the **Vercel free tier** without additional configuration.
 
-🚀 Start UI <small>[web]</small> is an opinionated frontend starter repository created & maintained by the [BearStudio Team](https://www.bearstudio.fr/team) and other contributors.
-It represents our team's up-to-date stack that we use when creating web apps for our clients.
-
-## Documentation
-
-For detailed information on how to use this project, please refer to the [documentation](https://docs.web.start-ui.com). The documentation contains all the necessary information on installation, usage, and some guides.
-
-## Demo
-
-A live read-only demonstration of what you will have when starting a project with 🚀 Start UI <small>[web]</small> is available on [demo.start-ui.com](https://demo.start-ui.com).
-
-## Technologies
-
-<div align="center" style="margin: 0 0 16px 0"><img src=".github/assets/tech-logos.png" alt="Technologies logos of the starter" /></div>
-
-[🟦 TypeScript](https://www.typescriptlang.org/), [⚛️ React](https://react.dev/), [⚫️ NextJS](https://nextjs.org/), [⚡️ Chakra UI](https://chakra-ui.com/),  [🟦 tRPC](https://trpc.io/), [▲ Prisma](https://www.prisma.io/), [🏖️ TanStack Query](https://react-query.tanstack.com/), [📕 Storybook](https://storybook.js.org/), [🎭 Playwright](https://playwright.dev/), [📋 React Hook Form](https://react-hook-form.com/)
-, [🌍 React i18next](https://react.i18next.com/)
-
-
-## Requirements
-
-- [NodeJS](https://nodejs.org/) >=20
-- [Pnpm](https://pnpm.io/)
-- [Docker](https://www.docker.com/) (or a [PostgreSQL](https://www.postgresql.org/) database)
-
-## Getting Started
-
-```bash
-pnpm create start-ui -t web myApp
-```
-
-That will scaffold a new folder with the latest version of 🚀 Start UI <small>[web]</small> 🎉
+** Only the basic user scaffold is available at the moment.
 
 ## Installation
 
-1. Duplicate the `.env.example` file to a new `.env` file, and update the environment variables
+1. Clone this repo
+2. Duplicate the `.env.example` file to a new `.env` file, and update the environment variables
 
 ```bash
 cp .env.example .env
@@ -50,8 +19,7 @@ cp .env.example .env
 > **Quick advices for local development**
 > - **DON'T update** the **EMAIL_SERVER** variable, because the default value will be used to catch the emails during the development.
 
-
-2. Install dependencies
+3. Install dependencies
 ```bash
 pnpm install
 ```
@@ -86,18 +54,18 @@ The maildev UI is available at [0.0.0.0:1080](http://0.0.0.0:1080).
 
 Emails templates are built with `react-email` components in the `src/emails` folder.
 
-You can preview an email template at `http://localhost:3000/devtools/email/{template}` where `{template}` is the name of the template file in the `src/emails/templates` folder.
+You can preview an email template at `http://localhost:4000/devtools/email/{template}` where `{template}` is the name of the template file in the `src/emails/templates` folder.
 
-Example: [Login Code](http://localhost:3000/devtools/email/login-code)
+Example: [Login Code](http://localhost:4000/devtools/email/login-code)
 
 ##### Email translation preview
 
-Add the language in the preview url like `http://localhost:3000/devtools/email/{template}/{language}` where `{language}` is the language key (`en`, `fr`, ...)
+Add the language in the preview url like `http://localhost:4000/devtools/email/{template}/{language}` where `{language}` is the language key (`en`, `fr`, ...)
 
 #### Email props preview
 
 You can add search params to the preview url to pass as props to the template.
-`http://localhost:3000/devtools/email/{template}/?{propsName}={propsValue}`
+`http://localhost:4000/devtools/email/{template}/?{propsName}={propsValue}`
 
 ### Storybook
 
@@ -197,6 +165,9 @@ docker build -t start-ui-web .
 
 2. Run the Docker image (replace `start-ui-web` with your project name)
 ```
-docker run -p 80:3000 start-ui-web
+docker run -p 80:4000 start-ui-web
 ```
 Application will be exposed on port 80 ([http://localhost](http://localhost))
+
+### Deploy on Vercel
+#TBD
